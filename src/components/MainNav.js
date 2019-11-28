@@ -5,7 +5,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 const MainNav = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar  className="navbar navbar-dark bg-dark" expand="lg">
       <Navbar.Brand href="/">
           Vancity
       </Navbar.Brand>
