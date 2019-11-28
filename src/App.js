@@ -1,16 +1,26 @@
 import React from 'react';
 import MainPage from './components/MainPage'
-import { BrowserRouter as Router } from 'react-router-dom'
+import Loan from "./components/Loan"
+// import MainNav from "./components/MainNav"
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-function App() {
+class App extends React.Component{
+  render(){
+    return(
+      <React.Fragment>
 
-  return (
-    <div>
       <Router>
-        <MainPage />
-      </Router>
-    </div>
-  )
+
+        <Switch>
+      
+        <Route exact path="/" Component={MainPage} />
+        <Route path="/loan" Component={Loan}/>
+      
+      </Switch>
+    </Router>
+    </React.Fragment>
+    )
+  }
 }
 
 export default App;
