@@ -1,0 +1,21 @@
+import React from 'react';
+import Balance from "./MainPage/Balance"
+import avatar from "../img/avatar-2.jpeg"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import PrograssBars from './MainPage/ProgressBar';
+import MainNav from './MainNav'
+
+class MainPage extends React.Component {
+
+  render () {
+    return (
+      <div>
+        <MainNav />
+        <Balance avatar={avatar}/>
+        <PrograssBars/>
+      </div>
+    );
+  }
+}
+
+export default MainPage;

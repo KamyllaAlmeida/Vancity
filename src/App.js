@@ -1,22 +1,30 @@
 import React from 'react';
-import Balance from './components/Balance'
-import avatar from "./img/avatar-2.jpeg"
-import logo from './logo.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import MainNav from './components/MainNav';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import PrograssBars from './components/ProgressBar';
+import MainPage from './components/MainPage'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Statement from './components/Statement';
+import Loan from './components/Loan';
 
-function App() {
+class App extends React.Component{
+  render(){
+    return(
+      <React.Fragment>
 
-  return (
-    <div>
-      <MainNav />
-      <Balance avatar={avatar}/>
-      <PrograssBars/>
-    </div>
-  );
-}
+      <Router>
+      <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route path="/statement">
+            <Statement />
+          </Route>
+          <Route path="/loan">
+            <Loan />
+          </Route>
+        </Switch>
+      </Router>
+      
+    </React.Fragment>
+  )
+}}
 
 export default App;
