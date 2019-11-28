@@ -12,7 +12,7 @@ class ProgressBars extends React.Component{
         const hpNow=20;
         return(
             <div className="progressBars">
-                <div class="progressLabel">
+                <div className="progressLabel">
                     <h4>Bike target: $100    Due: June 1th 2020</h4>
                     </div>
             <ProgressBar animated variant="success" now={bikenow} label={`${bikenow}%`}/>

@@ -8,10 +8,8 @@ import Loan from "./Loan"
 const MainNav = () => {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">
-        <Link to='/MainPage'>
+      <Navbar.Brand href="/">
           Vancity
-        </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

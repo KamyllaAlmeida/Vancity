@@ -1,8 +1,8 @@
 import React from 'react';
 import MainPage from './components/MainPage'
-import Loan from "./components/Loan"
-// import MainNav from "./components/MainNav"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Statement from './components/Statement';
+import Loan from "./components/Loan"
 
 class App extends React.Component{
   render(){
@@ -10,17 +10,18 @@ class App extends React.Component{
       <React.Fragment>
 
       <Router>
-
-        <Switch>
+      <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route path="/statement">
+            <Statement />
+          </Route>
+        </Switch>
+      </Router>
       
-        <Route exact path="/" Component={MainPage} />
-        <Route path="/loan" Component={Loan}/>
-      
-      </Switch>
-    </Router>
-    </React.Fragment>
-    )
-  }
+    </div>
+  )
 }
 
 export default App;
