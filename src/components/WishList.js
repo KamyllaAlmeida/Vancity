@@ -1,6 +1,6 @@
 import React from 'react';
 import MainNav from './MainNav'
-import ReactCanvasNest from "react-canvas-nest"
+// import ReactCanvasNest from "react-canvas-nest"
 import ProgressBar from "react-bootstrap/ProgressBar"
 import Card from "react-bootstrap/Card"
 import 'bootstrap/dist/css/bootstrap.min.css';
