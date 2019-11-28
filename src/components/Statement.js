@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import "./Balance.css"
 import getMoneyImg from "../img/Finance_loan_money-512.png"
 import { Table } from 'react-bootstrap';
-import MainNav from './MainNav'
 
 
 class Statement extends React.Component {
@@ -38,8 +37,8 @@ class Statement extends React.Component {
     ];
 
     return (
+      
       <div>
-        <MainNav />
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -59,3 +58,4 @@ class Statement extends React.Component {
 }
         
 export default Statement;
+
