@@ -1,24 +1,78 @@
 
-  .balance-container{
-    height: 300px;
-    width:500px;
-  }
+  @import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
   
+  .greeting{
+    margin-top:10px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    font-size:20px;
+    color:#5a85c3;
+    text-shadow:0 0 0.05em #9ccFE7,
+                -0 -0 0.05em #9ccFE7;
+    
+  }
+  .background{
+    background:#001f35 !important;
+
+
+  }
+  .title{
+    width:10% !important;
+  }
+  .titleSlogan{
+    text-align: center;
+  }
+
+
+  .balance-container{
+    width:500px;
+    height:100px;
+    float:left;
+    display:inline;
+    width:50%;
+    /* font-family: 'Neucha', cursive; */
+    font-weight: bold;
+    text-align: center;
+    color: #64C0B5;
+    text-shadow:0 0 0.15em #9ccFE7,
+                -0 -0 0.15em #9ccFE7;
+  }
+  .loan-container{
+    width:500px;
+    height:100px;
+    float:left;
+    display:inline;
+    width:50%;
+    /* font-family: 'Neucha', cursive; */
+    font-weight: bold;
+    text-align:center;
+    color: #ec4f77;
+    text-shadow:0 0 0.15em #f5a9cb,
+                -0 -0 0.15em #F5A9CB;
+  }
+  .avatar{
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    width: 40%;
+  }
   .user-avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    height:50%;
+    width:20%;
+    
   }
-  
   @import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
 .progressBars{
-    width: 80%;
+    width: 70%;
     margin-right:auto;
     margin-left:auto;
+    height: 400px;
   }
 .progressLabel{
+    color:#FFEE6E;
     margin-top:10px;
     font-size:30;
-    font-family: 'Neucha', cursive;
     font-weight: bold;
 }

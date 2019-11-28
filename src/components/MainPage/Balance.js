@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./MainPage.css"
 
 
+
 class Balance extends React.Component {
     render() {
         const username = "Joe Smith"
@@ -10,8 +11,14 @@ class Balance extends React.Component {
         const loanbalance = 100
         return (
             <div>
-                <h2>Welcome back! {username}</h2>
+                <div className="greeting">
+
+                <img className="title" src={this.props.title}/>
+                <p>Great! You are saving for your amazing future! {username}</p>
+                </div>
+                <div className="avatar">
                 <img className="user-avatar" src={this.props.avatar} alt="user avatar" />
+                </div>
                     <div className="balance-container">
                         <h2>Your current balance is ${balance}</h2>
                     </div>
