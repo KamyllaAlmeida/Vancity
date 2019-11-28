@@ -25,7 +25,7 @@ const popover = (
     <Popover.Title as="h3"> Gift from your best friend! <img src={Logo} /></Popover.Title>
     <Popover.Content>
     <img className="prize" src={Key} />
-    <h5>Choose your give for 1000 Point level from the list! I know you will make it soon!</h5>
+    <h5>Choose your gift for 1000 Point level from the list! I know you will make it soon!</h5>
     <Button variant="info">Gift List</Button>
     </Popover.Content>
   </Popover>
@@ -92,7 +92,7 @@ const WishList = () => {
       </Card.Text>
       <Button variant="primary">Hide from parents</Button>
       <p></p>
-      <Button variant="danger">Delete Money will be back to your account.</Button>
+      <Button variant="danger">Delete this goal Money will be back to your account.</Button>
     </Card.Body>
     <ProgressBar animated variant="success" now= {80} label={`80%`}/>
     <Card.Footer>
