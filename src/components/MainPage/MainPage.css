@@ -1,0 +1,24 @@
+
+  .balance-container{
+    height: 300px;
+    width:500px;
+  }
+  
+  .user-avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
+.progressBars{
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+.progressLabel{
+    margin-top:10px;
+    font-size:30;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+}

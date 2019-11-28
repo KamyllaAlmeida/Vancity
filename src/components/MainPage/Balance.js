@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Balance.css"
+import "./MainPage.css"
 
 
 class Balance extends React.Component {

@@ -1,6 +1,6 @@
 import React from "react"
 import ProgressBar from "react-bootstrap/ProgressBar"
-import './style.css';
+import "./MainPage.css";
 
 
 
