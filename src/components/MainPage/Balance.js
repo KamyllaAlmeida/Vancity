@@ -13,7 +13,7 @@ class Balance extends React.Component {
             <div>
                 <div className="greeting">
 
-                <img className="title" src={this.props.title}/>
+                <img className="title" src={this.props.title} alt="avatar img"/>
                 <p>Great! You are saving for your amazing future!{username}</p>
                 </div>
                 <div className="avatar">
