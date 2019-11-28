@@ -13,7 +13,8 @@
     
   }
   .background{
-    background-color:#001f35
+    background:#001f35 !important;
+    position: absolute;
 
   }
   .title{
