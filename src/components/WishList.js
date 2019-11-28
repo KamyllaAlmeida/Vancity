@@ -48,7 +48,7 @@ const WishList = () => {
   </Container>
 </Jumbotron>
     <div className="background">
-    <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} />
+    {/* <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} /> */}
     <div className="cardDeck">
     <CardDeck>
   <Card bg="info">
@@ -107,17 +107,22 @@ const WishList = () => {
   <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Goal</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control type="email" placeholder="Goal" />
     
   </Form.Group>
-
-  <Form.Group controlId="formBasicPassword">
+  <Form.Group md="3" controlId="formBasicPassword">
     <Form.Label>Target Amount</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
+    <Form.Control type="number" placeholder="Target Amount" />
   </Form.Group>
-  <Form.Group controlId="formBasicCheckbox">
+  <Form.Group md="3" controlId="formBasicPassword">
+    <Form.Label>Deadline</Form.Label>
+    <Form.Control type= "date" placeholder="DeadLine" />
+  </Form.Group>
+  <Form.Group md="3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Do you want to hide from Parents?" />
   </Form.Group>
+
+ 
 </Form>
 <div className="canvas">
   <CanvasDraw/>
