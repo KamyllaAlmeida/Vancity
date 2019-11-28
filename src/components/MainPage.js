@@ -15,7 +15,7 @@ class MainPage extends React.Component {
       <div className="background">
         
         <MainNav />
-        {/* <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 99 }} /> */}
+        <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 99 }} />
         <Balance avatar={avatar} title={title}/>
         <PrograssBars/>
       </div>

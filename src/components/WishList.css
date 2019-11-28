@@ -8,6 +8,10 @@
     padding-bottom: 1em;
 
 }
+.canvas{
+    margin: 0 auto !important;
+    width:400px;
+}
 .jumbotron{
     padding-top:1em;
     padding-bottom:1em;
@@ -27,4 +31,15 @@ h2 img{
 }
 h3 img{
     width:50px !important;
+}
+.prize{
+    width:100%
+}
+.addNew{
+    color:#F5A9CB;
+    text-align: center;
+    padding-bottom: 2em;
+    width: 60%;
+    margin-left:auto;
+    margin-right:auto;
 }
