@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Balance.css"
+//import "./Balance.css"
 import moneyImg from "../img/money-with-wings-512.png"
 import getMoneyImg from "../img/Finance_loan_money-512.png"
 import { Table } from 'react-bootstrap';
