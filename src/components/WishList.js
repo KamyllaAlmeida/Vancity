@@ -10,7 +10,7 @@ import Bike from "../img/bike.png"
 import Key from "../img/key.jpg"
 import Logo from "../img/vancity.png"
 import CardDeck from "react-bootstrap/CardDeck"
-import Jumbotron from "react-bootstrap/jumbotron"
+import Jumbotron from "react-bootstrap/Jumbotron"
 import Container from "react-bootstrap/Container"
 import "./WishList.css"
 import Button from "react-bootstrap/Button"
@@ -22,10 +22,10 @@ import Form from "react-bootstrap/Form";
 
 const popover = (
   <Popover id="popover-basic">
-    <Popover.Title as="h3"> Gift from your best friend! <img src={Logo} alt="img"/></Popover.Title>
+    <Popover.Title as="h3"> Gift from your best friend! <img src={Logo} /></Popover.Title>
     <Popover.Content>
-    <img className="prize" src={Key} alt="img"/>
-    <h5>Choose your gift for 1000 Point level from the list! I know you will make it soon!</h5>
+    <img className="prize" src={Key} />
+    <h5>Choose your give for 1000 Point level from the list! I know you will make it soon!</h5>
     <Button variant="info">Gift List</Button>
     </Popover.Content>
   </Popover>
@@ -41,14 +41,14 @@ const WishList = () => {
     <MainNav />
     <Jumbotron fluid>
   <Container>
-  <h2>Yeah! Your saving score is over 500! You got what your wish from Vancity! <img src={Logo} alt="img"/></h2>
+  <h2>Yeah! Your saving score is over 500! You got what your wish from Vancity! <img src={Logo} /></h2>
   <OverlayTrigger trigger="click" placement="right" overlay={popover}>
     <Button variant="info">See what you get!</Button>
   </OverlayTrigger>
   </Container>
 </Jumbotron>
     <div className="background">
-    {/* <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} /> */}
+    <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} />
     <div className="cardDeck">
     <CardDeck>
   <Card bg="info">
@@ -92,7 +92,7 @@ const WishList = () => {
       </Card.Text>
       <Button variant="primary">Hide from parents</Button>
       <p></p>
-      <Button variant="danger">Delete this goal Money will be back to your account.</Button>
+      <Button variant="danger">Delete Money will be back to your account.</Button>
     </Card.Body>
     <ProgressBar animated variant="success" now= {80} label={`80%`}/>
     <Card.Footer>
@@ -107,22 +107,17 @@ const WishList = () => {
   <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Goal</Form.Label>
-    <Form.Control type="email" placeholder="Goal" />
+    <Form.Control type="email" placeholder="Enter email" />
     
   </Form.Group>
-  <Form.Group md="3" controlId="formBasicPassword">
+
+  <Form.Group controlId="formBasicPassword">
     <Form.Label>Target Amount</Form.Label>
-    <Form.Control type="number" placeholder="Target Amount" />
+    <Form.Control type="password" placeholder="Password" />
   </Form.Group>
-  <Form.Group md="3" controlId="formBasicPassword">
-    <Form.Label>Deadline</Form.Label>
-    <Form.Control type= "date" placeholder="DeadLine" />
-  </Form.Group>
-  <Form.Group md="3" controlId="formBasicCheckbox">
+  <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Do you want to hide from Parents?" />
   </Form.Group>
-
- 
 </Form>
 <div className="canvas">
   <CanvasDraw/>
