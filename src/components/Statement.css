@@ -1,9 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Neucha&display=swap");
 .row-statement {
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .row-select {
   width: 200px;
   padding-bottom: 40px;
+}
+
+.background{
+  background-color:#001f35;
+}
+
+.table {
+  background-color: white;
+}
+
+.head1 {
+  font-family: 'Neucha', cursive;
+  font-weight: bold;
+  color: white
 }

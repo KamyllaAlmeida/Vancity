@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MainNav from './MainNav'
 import "./Statement.css"
 import getMoneyImg from "../img/Finance_loan_money-512.png"
 import wingsMoneyImg from "../img/money-with-wings-512.png"
@@ -240,10 +241,11 @@ class Statement extends React.Component {
 
     return (
       
-      <div>
-      <Container>
+      <div className="background">
+      <MainNav />
+      <Container >
         <Row className="row-statement">
-          <h1>Statements</h1>
+          <h1 className="head1">Statements</h1>
         </Row>
         <Row className="row-select">
             <Form.Control  as="select" value={this.state.value} onChange={this.handleChange}>
@@ -251,7 +253,7 @@ class Statement extends React.Component {
             </Form.Control>        
         </Row>
         <Row>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table">
             <thead>
               <tr>
                 <th>Withdraw/ Deposit</th>
