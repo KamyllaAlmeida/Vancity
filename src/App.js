@@ -1,13 +1,34 @@
 import React from 'react';
-import Balance from './components/Balance'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import avatar from "./img/avatar-2.jpeg"
+import MainPage from './components/MainPage'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Statement from './components/Statement';
+import Loan from './components/Loan';
+import WishList from "./components/WishList"
 
-function App() {
+class App extends React.Component{
+  render(){
+    return(
+      <React.Fragment>
 
-  return (
-    <Balance avatar={avatar}/>
-  );
-}
+      <Router>
+      <Switch>
+          <Route exact path="/">
+            <MainPage />
+          </Route>
+          <Route path="/statement">
+            <Statement />
+          </Route>
+          <Route path="/loan">
+            <Loan />
+          </Route>
+          <Route path="/wishList">
+            <WishList />
+          </Route>
+        </Switch>
+      </Router>
+      
+    </React.Fragment>
+  )
+}}
 
 export default App;
