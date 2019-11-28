@@ -3,6 +3,7 @@ import Balance from "./MainPage/Balance"
 import avatar from "../img/avatar-2.jpeg"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import PrograssBars from './MainPage/ProgressBar';
+import MainNav from './MainNav'
 
 class MainPage extends React.Component {
 

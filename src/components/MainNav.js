@@ -1,7 +1,5 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom'
-import Loan from "./Loan"
 
 
 
@@ -16,7 +14,7 @@ const MainNav = () => {
         <Nav className="mr-auto">
           <Nav.Link href="/wishList">Wish List</Nav.Link>
           <Nav.Link href="/statement">Statement</Nav.Link>
-          <Nav.Link href="#loan" component={Loan}>Loan</Nav.Link>
+          <Nav.Link href="/loan">Loan</Nav.Link>
         </Nav>
 
       </Navbar.Collapse>
