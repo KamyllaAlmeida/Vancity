@@ -76,14 +76,4 @@
     font-size:30;
     font-weight: bold;
 }
-.loanGreeting{
-  width: 40%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family:'Neucha', cursive;
-  height:1000px;
-  text-align: center;
-  color: #64C0B5;
-    text-shadow:0 0 0.15em #9ccFE7,
-                -0 -0 0.15em #9ccFE7;
-}
+

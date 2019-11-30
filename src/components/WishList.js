@@ -1,6 +1,6 @@
 import React from 'react';
 import MainNav from './MainNav'
-// import ReactCanvasNest from "react-canvas-nest"
+import ReactCanvasNest from "react-canvas-nest"
 import ProgressBar from "react-bootstrap/ProgressBar"
 import Card from "react-bootstrap/Card"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -22,9 +22,9 @@ import Form from "react-bootstrap/Form";
 
 const popover = (
   <Popover id="popover-basic">
-    <Popover.Title as="h3"> Gift from your best friend! <img src={Logo} /></Popover.Title>
+    <Popover.Title as="h3"> Gift from your best friend! <img src={Logo} alt="img"/></Popover.Title>
     <Popover.Content>
-    <img className="prize" src={Key} />
+    <img className="prize" src={Key} alt="img"/>
     <h5>Choose your give for 1000 Point level from the list! I know you will make it soon!</h5>
     <Button variant="info">Gift List</Button>
     </Popover.Content>
@@ -48,7 +48,7 @@ const WishList = () => {
   </Container>
 </Jumbotron>
     <div className="background">
-    <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} />
+    {/* <ReactCanvasNest className = 'canvasNest' config = {{ pointColor: ' 255, 255, 255 ',lineColor:'255,255,255' , count:"40"}} style = {{ zIndex: 91 }} /> */}
     <div className="cardDeck">
     <CardDeck>
   <Card bg="info">
@@ -107,13 +107,17 @@ const WishList = () => {
   <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Goal</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control type="text" placeholder="Goal" />
     
   </Form.Group>
 
   <Form.Group controlId="formBasicPassword">
     <Form.Label>Target Amount</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
+    <Form.Control type="number" placeholder="Target Amout" />
+  </Form.Group>
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>Due Date</Form.Label>
+    <Form.Control type="date" placeholder="Due Date" />
   </Form.Group>
   <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Do you want to hide from Parents?" />
