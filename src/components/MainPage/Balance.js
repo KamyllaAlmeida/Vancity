@@ -12,9 +12,8 @@ class Balance extends React.Component {
         return (
             <div>
                 <div className="greeting">
-
-                <img className="title" src={this.props.title} alt="avatar img"/>
-                <p>Great! You are saving for your amazing future!{username}</p>
+                <img className="title" src={this.props.title}/>
+                <p>Great! You are saving for your amazing future! {username}</p>
                 </div>
                 <div className="avatar">
                 <img className="user-avatar" src={this.props.avatar} alt="user avatar" />
